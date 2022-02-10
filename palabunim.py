@@ -8,27 +8,6 @@ import user_agent
 from user_agent import generate_user_agent
 
 
-def X():
-    logo = ''' \n
-\n'''
-    uuid = str(os.geteuid()) + str(os.getlogin())
-    id1 = uuid
-    id = (id1).join(uuid)
-    print ('\x1b[37;1m YOUR ID : ' + id)
-    http = requests.get('https://github.com/omarpalabun/listid.txt/blob/main/newidlist.txt').text
-    if id in http:
-            print ('\x1b[92mYOUR ID IS ACTIVE.........')
-            msg = str(os.geteuid())
-            time.sleep(1)
-    else:
-            print ('\x1b[91m id active nya HOW bo active krdn: @i4m_palabun >.......')
-            time.sleep(2)
-            print (logo)
-            sys.exit()
-            X()
-X()
-
-
 logo = """
 \033[1;31m
 
