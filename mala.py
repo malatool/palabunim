@@ -39,29 +39,6 @@ bu = current.month
 ha = current.day
 op = bulan[nTemp]
 
-def chk(): 
-  uuid = str(os.geteuid()) + str(os.getlogin()) 
-  id = "<".join(uuid) 
-  print("\n\n\x1b[37;1m  YOUR ID : "+id) 
-  try: 
-    httpCaht = requests.get("https://raw.githubusercontent.com/MalaQutaa/malasura/main/list.txt").text 
-    if id in httpCaht: 
-      print("\033[92m  YOUR ID IS ACTIVE. .......\033[97m") 
-      msg = str(os.geteuid()) 
-      time.sleep(1) 
-      pass 
-    else: 
-      print("\x1b[91m  ID ACTIVE NYA BO ACTIVE KRDNY ID NAMA BNERA BO @mala_bek4s\033[97m") 
-      time.sleep(1) 
-      sys.exit() 
-  except: 
-    sys.exit() 
-    if name == 'main': 
-     print (logo)
-     chk() 
-    
-chk()
-
 def  jalan(z):
 	for e in z + '\n':
 		sys.stdout.write(e)
